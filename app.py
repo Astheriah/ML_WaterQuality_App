@@ -69,10 +69,8 @@ with tabs[0]:
         st.markdown("---")
         if prediction == 1:
             st.success('💧 The water IS potable. Safe for consumption!')
-            st.balloons()
         else:
             st.error('⚠️ The water is NOT potable. Not recommended for consumption.')
-            st.snow()
         st.markdown("---")
         st.write("**Input values:**")
         st.dataframe(data.T, use_container_width=True)
